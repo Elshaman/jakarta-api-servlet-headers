@@ -4,28 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba9b1f52-b445-4784-bc29-179ac0fc0155" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/BuscarProductoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/CabecerasHttpRequestServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/DespacharServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/HoraActualizadaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoJsonServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoXlsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/RedirigirServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/models/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/ProductoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/ProductoServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/buscar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+    <list default="true" id="ba9b1f52-b445-4784-bc29-179ac0fc0155" name="Changes" comment="concluidas todos los headers">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/LoginServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/BuscarProductoServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/CabecerasHttpRequestServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/DespacharServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/HoraActualizadaServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoJsonServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoXlsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/RedirigirServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/buscar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +30,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -71,6 +70,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.cbo.apiservlet.webapp.headers.services" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="tomcat" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -109,7 +113,18 @@
       <workItem from="1680705542992" duration="4067000" />
       <workItem from="1680710763820" duration="2932000" />
       <workItem from="1680880231309" duration="13206000" />
+      <workItem from="1680999263849" duration="4203000" />
+      <workItem from="1681170167535" duration="2244000" />
+      <workItem from="1681779347960" duration="1197000" />
     </task>
+    <task id="LOCAL-00001" summary="concluidas todos los headers">
+      <created>1680999500237</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680999500237</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,5 +140,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="concluidas todos los headers" />
+    <option name="LAST_COMMIT_MESSAGE" value="concluidas todos los headers" />
   </component>
 </project>

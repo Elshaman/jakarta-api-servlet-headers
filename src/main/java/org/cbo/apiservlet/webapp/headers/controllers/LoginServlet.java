@@ -3,11 +3,15 @@ package org.cbo.apiservlet.webapp.headers.controllers;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
+import org.cbo.apiservlet.webapp.headers.services.LoginService;
+import org.cbo.apiservlet.webapp.headers.services.LoginServiceImp;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Arrays;
+import java.util.Optional;
 
-@WebServlet(name = "LoginServlet", value = "/login")
+@WebServlet(name = "LoginServlet", value = {"/login" , "/login.html"})
 public class LoginServlet extends HttpServlet {
 
     final static String USERNAME = "admin";
@@ -16,6 +20,28 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        LoginService auth = new LoginServiceImp();
+        Optional<String> cookieOptional = auth.getUsername(request);
+
+        if(cookieOptional.isPresent()){
+            response.setContentType("text/html;charset=UTF-8");
+            try(PrintWriter out = response.getWriter()){
+                out.println("<!DOCTYPE html>");
+                out.println("<html>");
+                out.println("    <head>");
+                out.println("        <meta charset=\"UTF-8\">");
+                out.println("        <title>Hola " +  cookieOptional.get() +  "ya has iniciado sesion anteriormente</title>");
+                out.println("    </head>");
+                out.println("    <body>");
+                out.println("        <h1>Hola" +  cookieOptional.get() +  "has iniciado sesion </h1>");
+                out.println("        <p><a href='" + request.getContextPath() + "/index.html'>volver</a></p>");
+                out.println("        <p><a href='" + request.getContextPath() + "/logout'>Cerrrar sesion</a></p>");
+                out.println("    </body>");
+                out.println("</html>");
+            }
+        }else {
+            getServletContext().getRequestDispatcher("/login.jsp").forward(request, response);
+        }
     }
 
     @Override
@@ -24,20 +50,11 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
         System.out.println(username + " , " + password);
         if(USERNAME.equals( username ) && PASSWORD.equals(password)){
-            response.setContentType("text/html;charset=UTF-8");
-            try(PrintWriter out = response.getWriter()){
-                out.println("<!DOCTYPE html>");
-                out.println("<html>");
-                out.println("    <head>");
-                out.println("        <meta charset=\"UTF-8\">");
-                out.println("        <title>Login correcto</title>");
-                out.println("    </head>");
-                out.println("    <body>");
-                out.println("        <h1>Login correcto</h1>");
-                out.println("        <h3>Hola " +  username  + " has iniciado con exito</h3>");
-                out.println("    </body>");
-                out.println("</html>");
-            }
+
+            Cookie usernameCookie = new Cookie("username" , username);
+
+            response.addCookie(usernameCookie);
+            response.sendRedirect(request.getContextPath() + "/login.html");
         }else {
             response.sendError( HttpServletResponse.SC_UNAUTHORIZED , "ingreso no authorizado");
         }

@@ -4,7 +4,8 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 import org.cbo.apiservlet.webapp.headers.services.LoginService;
-import org.cbo.apiservlet.webapp.headers.services.LoginServiceImp;
+import org.cbo.apiservlet.webapp.headers.services.LoginServiceCookieImp;
+import org.cbo.apiservlet.webapp.headers.services.LoginServiceSessionImp;
 
 import java.io.IOException;
 import java.util.Optional;
@@ -13,12 +14,12 @@ import java.util.Optional;
 public class LogoutServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        LoginService auth = new LoginServiceImp();
+        LoginService auth = new LoginServiceSessionImp();
         Optional<String> username = auth.getUsername(request);
         if(username.isPresent()){
-            Cookie usernameCookie = new Cookie("username" , "");
-            usernameCookie.setMaxAge(0);
-            response.addCookie(usernameCookie);
+            HttpSession session = request.getSession();
+            session.invalidate();
+
         }
         response.sendRedirect(request.getContextPath() + "/login.html");
     }

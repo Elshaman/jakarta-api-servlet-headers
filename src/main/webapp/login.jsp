@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>iniciar sesion</h1>
-<form action="/webapp-cookie/login" method="post">
+<form action="/webapp-session/login" method="post">
     <div>
         <p>username: <input type="text" name="username"></p>
         <p>pass: <input type="password" name="password"></p>

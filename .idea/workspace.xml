@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba9b1f52-b445-4784-bc29-179ac0fc0155" name="Changes" comment="concluidas todos los headers">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/LoginServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/LoginServiceSessionImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/BuscarProductoServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/CabecerasHttpRequestServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/DespacharServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/HoraActualizadaServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoJsonServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoXlsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/RedirigirServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/buscar.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/LoginServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/LoginServiceCookieImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,15 +24,15 @@
       <list>
         <option value="HTML File" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="cookies-project" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +60,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -116,6 +109,7 @@
       <workItem from="1680999263849" duration="4203000" />
       <workItem from="1681170167535" duration="2244000" />
       <workItem from="1681779347960" duration="1197000" />
+      <workItem from="1681951077157" duration="2799000" />
     </task>
     <task id="LOCAL-00001" summary="concluidas todos los headers">
       <created>1680999500237</created>

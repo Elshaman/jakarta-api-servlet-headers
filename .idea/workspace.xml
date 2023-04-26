@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba9b1f52-b445-4784-bc29-179ac0fc0155" name="Changes" comment="concluidas todos los headers">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/LoginServiceSessionImp.java" afterDir="false" />
+    <list default="true" id="ba9b1f52-b445-4784-bc29-179ac0fc0155" name="Changes" comment="ejemplo de persistencia de informacion con dookies">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/AgregarCarroServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/VerCarroServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/models/Carro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/models/ItemCarro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/carro.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/LogoutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/controllers/ProductoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/LoginServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/LoginServiceCookieImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/ProductoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/ProductoServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cbo/apiservlet/webapp/headers/services/ProductoServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,16 +24,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="cookies-project" />
+        <entry key="$PROJECT_DIR$" value="sesiones" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -110,6 +111,10 @@
       <workItem from="1681170167535" duration="2244000" />
       <workItem from="1681779347960" duration="1197000" />
       <workItem from="1681951077157" duration="2799000" />
+      <workItem from="1681985852130" duration="1008000" />
+      <workItem from="1682033633738" duration="595000" />
+      <workItem from="1682384500798" duration="643000" />
+      <workItem from="1682459992689" duration="6824000" />
     </task>
     <task id="LOCAL-00001" summary="concluidas todos los headers">
       <created>1680999500237</created>
@@ -118,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680999500237</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ejemplo de persistencia de informacion con dookies">
+      <created>1681985890486</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681985890486</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +149,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="concluidas todos los headers" />
-    <option name="LAST_COMMIT_MESSAGE" value="concluidas todos los headers" />
+    <MESSAGE value="ejemplo de persistencia de informacion con dookies" />
+    <option name="LAST_COMMIT_MESSAGE" value="ejemplo de persistencia de informacion con dookies" />
   </component>
 </project>
